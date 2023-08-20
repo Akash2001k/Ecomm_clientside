@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0); 
+    border-radius: 3px;
   }
-  to {
-    transform: rotate(360deg);
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(214, 213, 213); 
+    border-radius: 10px;
   }
-}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(146, 146, 146); 
+  }
+  .searchbar:focus{
+     outline:none
+  }
+  .cards{
+    height: 20vh;
+    width:32%;
+    border-radius: 5px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    box-shadow: 3px 3px 8px 1px rgb(206, 206, 206);
+    color:rgb(65, 65, 65)
+  }
+  .loginpagemaindiv{
+    height:100vh;
+    background:url('https://img.freepik.com/free-photo/financial-charts-with-pencil-table_1232-3120.jpg?w=740&t=st=1684405745~exp=1684406345~hmac=c35fd35429536330cfc93c5a45716cb05c75f1a5d651816075f4415f48000391');
+    background-size: 100% 100%;
+    border: 1px solid rgba(39, 17, 17, 0.753);
+  }
+  .login_div{
+    width:430px;
+    margin:100px auto;
+    background: #000000b8;
+    color: white;
+    border-radius: 7px;
+  }
+
+  .tooltiptext {
+    display: none;
+    min-width: 35px;
+    background-color: rgba(0, 0, 0, 0.498);
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    font-size: 13px;
+  }
+   
+  .edit_del_link:hover .tooltiptext {
+    display: block;
+  }
+  td{
+    border: none;
+  }
+  th{
+    border: none;
+  }
+
+  /* ========================About page ========================================================= */
