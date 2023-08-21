@@ -42,7 +42,7 @@ export default function Login() {
       }
     }
     catch (err) {
-      console.log("Error Somewhere")
+      console.log(err)
     }
   }
 
